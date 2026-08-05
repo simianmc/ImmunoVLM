@@ -1,0 +1,8 @@
+name: AMP-RA
+disease: rheumatoid_arthritis
+platform: visium
+manifest: data/manifests/amp_ra.csv
+native_spatial: true
+external_only: false
+classes: [RA_LM, RA_DM, RA_PI]
+

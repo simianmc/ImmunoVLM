@@ -1,0 +1,7 @@
+name: HEST-AI
+disease: mixed_inflammatory_tissue
+platform: visium
+manifest: data/manifests/hest_ai.csv
+native_spatial: true
+external_only: false
+

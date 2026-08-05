@@ -1,0 +1,5 @@
+inherits: main.yaml
+study: batch_sensitivity_128
+optimizer:
+  per_device_batch: 128
+

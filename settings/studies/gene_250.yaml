@@ -1,0 +1,5 @@
+inherits: main.yaml
+study: gene_sensitivity_250
+encoder:
+  gene_count: 250
+

@@ -1,0 +1,7 @@
+inherits: main.yaml
+study: ablation_image_only
+objective:
+  topology_weight: 0.0
+  graph_weight: 0.0
+  language_weight: 0.0
+

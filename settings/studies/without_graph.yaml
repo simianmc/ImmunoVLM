@@ -1,0 +1,5 @@
+inherits: main.yaml
+study: ablation_without_graph
+objective:
+  graph_weight: 0.0
+

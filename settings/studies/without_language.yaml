@@ -1,0 +1,5 @@
+inherits: main.yaml
+study: ablation_without_language
+objective:
+  language_weight: 0.0
+

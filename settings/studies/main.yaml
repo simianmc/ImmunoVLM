@@ -1,0 +1,47 @@
+study: primary_four_cohort
+seed: 42
+fold: 0
+encoder:
+  embedding_dim: 1024
+  gene_count: 500
+  spatial_width: 128
+  spatial_heads: 8
+  spatial_layers: 4
+  spatial_feedforward: 512
+  image_size: 224
+  dropout: 0.1
+  language_name: microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract-fulltext
+objective:
+  base_temperature: 0.07
+  distance_scale: 0.5
+  spatial_temperature: 0.1
+  embedding_temperature: 0.1
+  topology_weight: 0.3
+  graph_weight: 0.1
+  language_weight: 0.2
+  neighbor_count: 6
+optimizer:
+  learning_rate: 0.0005
+  weight_decay: 0.01
+  epochs: 100
+  per_device_batch: 512
+  gradient_accumulation: 4
+  gradient_clip: 1.0
+  warmup_steps: 0
+  precision: fp16
+runtime:
+  world_size: 4
+  workers: 16
+  checkpoint_interval: 10
+  deterministic: true
+  gpu: NVIDIA A100 80GB
+  cpu: 2x AMD EPYC 7763 64-Core
+  ram_gb: 512
+  pretraining_hours: 18
+  downstream_hours_per_disease: 2
+evaluation:
+  folds: 5
+  seeds: [42, 123, 256, 389, 512, 678, 741, 853, 927, 1024]
+  bootstrap_resamples: 2000
+  calibration_bins: 10
+

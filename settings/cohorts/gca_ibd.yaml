@@ -1,0 +1,8 @@
+name: GCA-IBD
+disease: inflammatory_bowel_disease
+platform: integrated_single_cell_spatial
+manifest: data/manifests/gca_ibd.csv
+native_spatial: true
+external_only: false
+classes: [IBD_CD, IBD_UC, IBD_IC]
+

@@ -1,0 +1,14 @@
+name: immunovlm
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10.12
+  - pytorch=2.1.0
+  - torchvision=0.16.0
+  - pytorch-cuda=12.1
+  - pip=23.3.1
+  - pip:
+      - -r requirements.txt
+

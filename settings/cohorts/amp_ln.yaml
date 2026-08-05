@@ -1,0 +1,8 @@
+name: AMP-LN
+disease: lupus_nephritis
+platform: reconstructed_scRNA_reference
+manifest: data/manifests/amp_ln.csv
+native_spatial: false
+external_only: false
+classes: [LN_I, LN_II, LN_III, LN_IV, LN_V, LN_VI]
+
